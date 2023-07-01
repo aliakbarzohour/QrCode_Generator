@@ -3,7 +3,10 @@ import qrcode
 
 def generate_qr_code():
     # Getting input from the user
-    title, univercity, location = input("Enter Your Data: ").split(' ')
+    input_string = input("[*] Enter Your Data: ")
+    
+    # Splitting the input string into separate parts
+    title, univercity, location = input_string.split('.')
     
     # Concatenating the input strings
     data = f"{title}{univercity}{location}"
